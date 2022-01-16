@@ -1,0 +1,18 @@
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+           
+            <h6 style="font-size: 30px; margin-left: 100px;"  >Accessory Store</h6>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+            </div>
+         
+
+
+        </div>
+        <button routerLink="cart" class="btn btn-primary" style="margin-right: 10px;">
+            <i style="font-size: 30px; " class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>
